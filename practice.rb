@@ -78,3 +78,15 @@
 #   end
 #    return potions_needed
 # end
+
+# def viralAdvertising(n)
+#   shared = 5
+#   cumulative = 0
+#   n.times {
+
+#       liked = shared / 2
+#       cumulative = cumulative + liked
+#       shared = liked * 3
+#   }
+#   return cumulative
+# end
