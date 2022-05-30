@@ -23,3 +23,26 @@
 
 #   return final_grades
 # end
+
+# Counting Valleys
+
+# def countingValleys(steps, path)
+#   path_array = path.split("")
+#   current_level = 0
+#   previous_level = 0
+#   valley = 0
+#   i = 0
+#   while i < path_array.length
+#        if path_array[i] == "D"
+#            current_level = current_level - 1
+#        elsif path_array[i] == "U"
+#            current_level = current_level + 1
+#        end
+#        if previous_level == -1 && current_level == 0
+#            valley = valley + 1
+#        end
+#        previous_level = current_level
+#        i += 1
+#   end
+#   p valley
+# end
