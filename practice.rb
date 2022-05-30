@@ -46,3 +46,16 @@
 #   end
 #   p valley
 # end
+
+# def catAndMouse(x, y, z)
+#   dist_x = z - x
+#   dist_y = z - y
+
+#   if dist_x.abs < dist_y.abs
+#       p "Cat A"
+#   elsif dist_y.abs < dist_x.abs
+#       p "Cat B"
+#   elsif dist_y.abs == dist_x.abs
+#       p "Mouse C"
+#   end
+# end
