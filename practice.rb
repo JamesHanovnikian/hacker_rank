@@ -59,3 +59,22 @@
 #       p "Mouse C"
 #   end
 # end
+
+# def hurdleRace(k, height)
+#   height_array = height.to_a
+#   tallest_hurdle = 0
+#   i = 0
+#   while i. < height_array.length
+#     current_hurdle = height_array[i]
+#     if current_hurdle > tallest_hurdle
+#         tallest_hurdle = current_hurdle
+#     end
+#     i += 1
+#   end
+#   if k >= tallest_hurdle
+#     return 0
+#   else
+#     potions_needed = tallest_hurdle - k
+#   end
+#    return potions_needed
+# end
