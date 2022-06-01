@@ -90,3 +90,36 @@
 #   }
 #   return cumulative
 # end
+
+# def designerPdfViewer(h, word)
+
+#   letters_array = ('a'..'z').to_a
+#   letters_hash = {}
+
+#   i = 0
+#   while i < letters_array.length
+#       letters_hash[letters_array[i]] = h[i]
+#       i += 1
+#   end
+
+#   tallest_letter = 0
+
+#   j = 0
+#   while j < word.length
+#       letters_hash[word[j]]
+#       j += 1
+#   end
+
+#   highest_letter = 0
+
+#   j = 0
+#   while j < word.length
+#       letter = word[j]
+#       if letters_hash[letter] > highest_letter
+#           highest_letter = letters_hash[letter]
+#       end
+#       j += 1
+#   end
+#   area = highest_letter * word.length
+#   return area
+# end
