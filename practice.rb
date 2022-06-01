@@ -123,3 +123,35 @@
 #   area = highest_letter * word.length
 #   return area
 # end
+
+# Sock Merchant
+
+# While Loop to go through the array.
+# Empty variable holding number of pairs.
+# Create a hash map / counter for each number.
+# Loop through the hash map, if it is even, divide it by 2 and then add to the var holding the num of pairs.
+
+# def sockMerchant(n, ar)
+#   total_pairs = 0
+#   pair_counter = {}
+#   i = 0
+#   while i < ar.length
+#       number = ar[i]
+#       if pair_counter[number] == nil
+#           pair_counter[number] = 0
+#       end
+#       pair_counter[number] += 1
+#       i += 1
+#   end
+
+#   pair_counter.each do |k, v|
+#       if v % 2 == 0
+#           pairs = v / 2
+#           total_pairs = total_pairs + pairs
+#       elsif v > 2
+#           pairs = v / 2
+#           total_pairs = total_pairs + pairs
+#       end
+#   end
+#   total_pairs
+# end
