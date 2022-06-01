@@ -155,3 +155,29 @@
 #   end
 #   total_pairs
 # end
+
+# Disgruntled Professor
+#
+# Loop through the array.
+# Make a variable for on time students  = 0
+# Each iteration --> If a[i] < 0 add one to on time students
+# If on time students reaches k --> return yes
+# Else, return no
+
+def angryProfessor(k, a)
+  ontime_students = 0
+  i = 0
+  while i < a.length
+    if a[i] <= 0
+      ontime_students = ontime_students + 1
+    end
+    i += 1
+  end
+  p k
+  p ontime_students
+  if ontime_students >= k
+    return "NO"
+  else
+    return "YES"
+  end
+end
