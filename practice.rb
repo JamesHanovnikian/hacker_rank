@@ -164,20 +164,37 @@
 # If on time students reaches k --> return yes
 # Else, return no
 
-def angryProfessor(k, a)
-  ontime_students = 0
-  i = 0
-  while i < a.length
-    if a[i] <= 0
-      ontime_students = ontime_students + 1
-    end
-    i += 1
-  end
-  p k
-  p ontime_students
-  if ontime_students >= k
-    return "NO"
-  else
-    return "YES"
-  end
-end
+# def angryProfessor(k, a)
+#   ontime_students = 0
+#   i = 0
+#   while i < a.length
+#     if a[i] <= 0
+#       ontime_students = ontime_students + 1
+#     end
+#     i += 1
+#   end
+#   p k
+#   p ontime_students
+#   if ontime_students >= k
+#     return "NO"
+#   else
+#     return "YES"
+#   end
+# end
+
+# Beautiful Days !
+
+# def beautifulDays(i, j, k)
+#   days_array = Array(i..j)
+#   beautiful_days = 0
+#   index = 0
+#   while index < days_array.length
+#       current_day = days_array[index]
+#       reversed_int = current_day.to_s.reverse.to_i
+#      if  (current_day - reversed_int) % k == 0
+#           beautiful_days += 1
+#      end
+#       index += 1
+#   end
+#   beautiful_days
+# end
