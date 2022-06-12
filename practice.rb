@@ -236,3 +236,18 @@
 #       p lowest_width
 #   end
 # end
+
+# def jumpingOnClouds(c)
+#   i = 0
+#   jumps = 0
+#   while i < c.length-1
+#       if c[i + 2] == 1
+#           i += 1
+#           jumps += 1
+#       else
+#           i += 2
+#           jumps += 1
+#       end
+#   end
+#   jumps
+# end
