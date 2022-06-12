@@ -251,3 +251,13 @@
 #   end
 #   jumps
 # end
+
+# def chocolateFeast(n, c, m)
+#   choco = n / c
+#   wraps = choco
+#   while wraps >= m
+#       choco += wraps / m
+#       wraps = (wraps / m) + (wraps % m)
+#   end
+#   choco
+# end
