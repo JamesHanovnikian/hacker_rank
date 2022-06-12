@@ -261,3 +261,22 @@
 #   end
 #   choco
 # end
+
+# def findDigits(n)
+#   # Write your code here
+#  array = n.to_s.split("").to_a
+#  divisors = 0
+#  i = 0
+#  while i < array.length
+#   num = array[i].to_i
+
+#   p num
+#   if num == 0
+#       p "Hello!"
+#   elsif n % num == 0
+#       divisors += 1
+#   end
+#   i += 1
+#  end
+#  divisors
+# end
