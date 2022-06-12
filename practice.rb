@@ -198,3 +198,41 @@
 #   end
 #   beautiful_days
 # end
+
+# def cutTheSticks(arr)
+#   current_lowest_stick = arr[0]
+
+#   while arr.length >= 1
+#     i = 0
+#     p arr.length
+#     if arr.length == 1
+#       break
+#     end
+#     while i < arr.length
+#       stick_height = arr[i]
+#       if stick_height < current_lowest_stick
+#         current_lowest_stick = stick_height
+#       end
+#       i += 1
+#     end
+#     arr.map! { |num| (num - current_lowest_stick) }
+#     arr.reject! { |num| num == 0 }
+#   end
+# end
+
+# p cutTheSticks([5, 4, 4, 2, 2, 8])
+
+# def serviceLane(n, cases)
+
+#   cases.each do |i, j|
+#       x = i
+#       lowest_width = 100
+#       while x <= j
+#           if width[x] < lowest_width
+#               lowest_width = width[x]
+#           end
+#           x += 1
+#       end
+#       p lowest_width
+#   end
+# end
