@@ -280,3 +280,24 @@
 #  end
 #  divisors
 # end
+
+def migratoryBirds(arr)
+  hash_map = {}
+  i = 0
+  while i < arr.length
+    if hash_map[arr[i]] == nil
+      hash_map[arr[i]] = 0
+    end
+    hash_map[arr[i]] += 1
+    i += 1
+  end
+  highest_count = 1
+  hash_map.each do |bird, count|
+    if count >= highest_count
+      highest_count = count
+    end
+  end
+  birdies = hash_map.select { |k, v| v >= highest_count }
+  sorted_birds = birdies.sort_by { |bird, count| bird }
+  sorted_birds[0][0]
+end
