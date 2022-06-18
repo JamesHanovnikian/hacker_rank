@@ -313,3 +313,24 @@
 #       return "pangram"
 #   end
 # end
+
+# def minimumDistances(a)
+#     hash = {}
+#     smallest_distance = 100000
+
+#     if a.uniq.length == a.length
+#         return -1
+#     end
+
+#     a.each_with_index do |value, index|
+#         if hash[value]
+#              difference = index - hash[value]
+#             if difference < smallest_distance
+#                 smallest_distance = difference
+#             end
+#         else
+#            hash[value] = index
+#         end
+#     end
+#     smallest_distance
+# end
