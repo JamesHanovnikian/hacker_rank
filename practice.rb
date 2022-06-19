@@ -334,3 +334,28 @@
 #     end
 #     smallest_distance
 # end
+
+# def howManyGames(p, d, m, s)
+#   games_bought = 0
+#   if s < p
+#       return 0
+#   end
+#   while s > 0
+#       if p >= m
+#           s = s - p
+#           if s < 0
+#               break
+#           end
+#           p = p - d
+#           games_bought += 1
+#       else
+#           if s >= m
+#               s = s - m
+#               games_bought += 1
+#           else
+#               break
+#           end
+#       end
+#   end
+#   games_bought
+# end
