@@ -359,3 +359,24 @@
 #   end
 #   games_bought
 # end
+
+# def getMoneySpent(keyboards, drives, b)
+#   max_sum = -1
+#   i = 0
+#   while i < keyboards.length
+#    j = 0
+#    k= keyboards[i]
+#    while j < drives.length
+#        d = drives[j]
+#        sum = d + k
+#        if sum <= b
+#            if sum > max_sum
+#                max_sum = sum
+#            end
+#        end
+#        j += 1
+#    end
+#    i += 1
+#   end
+#   max_sum
+# end
