@@ -380,3 +380,53 @@
 #   end
 #   max_sum
 # end
+
+def dayOfProgrammer(year)
+  reg_months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+  leap_months = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+  if year <= 1917
+    if year % 4 == 0
+      count = 0
+      i = 0
+      while 256 - count > 30
+        count = count + leap_months[i]
+        i += 1
+      end
+    else
+      count = 0
+      i = 0
+      while 256 - count > 30
+        count = count + reg_months[i]
+        i += 1
+      end
+    end
+  elsif year == 1918
+    p "what"
+  elsif year >= 1919
+    if year % 4 == 0 && year % 100 != 0 || year % 100 == 0
+      count = 0
+      i = 0
+      while 256 - count > 30
+        count = count + leap_months[i]
+        i += 1
+      end
+    else
+      count = 0
+      i = 0
+      while 256 - count > 30
+        count = count + reg_months[i]
+        i += 1
+      end
+    end
+  end
+  if i + 1 < 10
+    month_number = "0#{i + 1}"
+  end
+
+  day = 256 - count
+
+  puts "#{day}.#{month_number}.#{year}"
+end
+
+p dayOfProgrammer(2017)
