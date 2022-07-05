@@ -382,51 +382,96 @@
 # end
 
 # def dayOfProgrammer(year)
-reg_months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-leap_months = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+# reg_months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+# leap_months = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
-if year <= 1917
-  if year % 4 == 0
-    count = 0
-    i = 0
-    while 256 - count > 30
-      count = count + leap_months[i]
-      i += 1
-    end
-  else
-    count = 0
-    i = 0
-    while 256 - count > 30
-      count = count + reg_months[i]
-      i += 1
-    end
-  end
-elsif year == 1918
-  result = "26.09.#{year}"
-  return result 
-elsif year >= 1919
-  if year % 4 == 0 && year % 100 != 0 || year % 400 == 0
-    count = 0
-    i = 0
-    while 256 - count > 30
-      count = count + leap_months[i]
-      i += 1
-    end
-  else
-    count = 0
-    i = 0
-    while 256 - count > 30
-      count = count + reg_months[i]
-      i += 1
-    end
-  end
-end
-if i + 1 < 10
-  month_number = "0#{i + 1}"
-end
+# if year <= 1917
+#   if year % 4 == 0
+#     count = 0
+#     i = 0
+#     while 256 - count > 30
+#       count = count + leap_months[i]
+#       i += 1
+#     end
+#   else
+#     count = 0
+#     i = 0
+#     while 256 - count > 30
+#       count = count + reg_months[i]
+#       i += 1
+#     end
+#   end
+# elsif year == 1918
+#   result = "26.09.#{year}"
+#   return result
+# elsif year >= 1919
+#   if year % 4 == 0 && year % 100 != 0 || year % 400 == 0
+#     count = 0
+#     i = 0
+#     while 256 - count > 30
+#       count = count + leap_months[i]
+#       i += 1
+#     end
+#   else
+#     count = 0
+#     i = 0
+#     while 256 - count > 30
+#       count = count + reg_months[i]
+#       i += 1
+#     end
+#   end
+# end
+# if i + 1 < 10
+#   month_number = "0#{i + 1}"
+# end
 
-day = 256 - count
-result = "#{day}.#{month_number}.#{year}"
-return result 
-end
+# day = 256 - count
+# result = "#{day}.#{month_number}.#{year}"
+# return result
+# end
 
+# def camelcase(s)
+#   array = s.split("")
+#   count = 1
+#   array.each do |letter|
+#       if letter != letter.upcase
+#           p "hello"
+#       else
+#           count += 1
+#       end
+#   end
+#   count
+# end
+
+# colon = start.index(":")
+# p start[colon - 2]
+# p start[colon - 1]
+
+# Write a function that accepts an array of strings and returns the total length of all the strings.
+
+# Example:
+# Input: ["volleyball", "basketball", "badminton"]
+# Output: 29
+
+# Write a function that accepts an array of numbers and returns the greatest number.
+
+# def equalizeArray(arr)
+#   hash_map = {}
+#   i = 0
+#   total_numbers = arr.length
+#   while i < arr.length
+#      num = arr[i]
+#      if hash_map[num] == nil
+#          hash_map[num] = 0
+#      end
+#      hash_map[num] += 1
+#      i += 1
+#  end
+#  most_counts = 0
+#   hash_map.each do |k, v|
+#      if v > most_counts
+#          most_counts = v
+#      end
+#   end
+#   total_numbers - most_counts
+#  end
