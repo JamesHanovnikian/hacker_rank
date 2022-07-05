@@ -475,3 +475,26 @@
 #   end
 #   total_numbers - most_counts
 #  end
+
+# def hackerrankInString(s)
+#     array = s.split("")
+#     hacker_rank = ["h", "a", "c", "k", "e", "r", "r", "a", "n", "k"]
+#     new_string = ""
+#     i = 0
+#     j = 0
+#     while i < hacker_rank.length
+#         while j < array.length
+#             if hacker_rank[i] == array[j]
+#               new_string = new_string + hacker_rank[i]
+#               break
+#             end
+#             j += 1
+#         end
+#         i += 1
+#     end
+#     if new_string == "hackerrank"
+#         return "YES"
+#     else
+#         return "NO"
+#     end
+# end
