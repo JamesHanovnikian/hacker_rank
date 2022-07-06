@@ -498,3 +498,21 @@
 #         return "NO"
 #     end
 # end
+
+def fairRations(b)
+  i = 0
+  bread = 0
+  while i < b.length - 1
+    if b[i] % 2 != 0
+      bread += 2
+      b[i + 1] += 1
+    end
+    i += 1
+  end
+
+  if b[i - 1] % 2 != 0
+    return "NO"
+  else
+    return bread
+  end
+end
