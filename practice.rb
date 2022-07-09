@@ -499,20 +499,246 @@
 #     end
 # end
 
-def fairRations(b)
-  i = 0
-  bread = 0
-  while i < b.length - 1
-    if b[i] % 2 != 0
-      bread += 2
-      b[i + 1] += 1
-    end
-    i += 1
-  end
+# def fairRations(b)
+#   i = 0
+#   bread = 0
+#   while i < b.length - 1
+#     if b[i] % 2 != 0
+#       bread += 2
+#       b[i + 1] += 1
+#     end
+#     i += 1
+#   end
 
-  if b[i - 1] % 2 != 0
-    return "NO"
-  else
-    return bread
-  end
-end
+#   if b[i - 1] % 2 != 0
+#     return "NO"
+#   else
+#     return bread
+#   end
+# end
+
+# 1. Two Sum
+# Easy
+
+# 34317
+
+# 1081
+
+# Add to List
+
+# Share
+# Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+# You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+# You can return the answer in any order.
+
+# Example 1:
+
+# Input: nums = [2,7,11,15], target = 9
+# Output: [0,1]
+# Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+# Example 2:
+
+# Input: nums = [3,2,4], target = 6
+# Output: [1,2]
+# Example 3:
+
+# Input: nums = [3,3], target = 6
+# Output: [0,1]
+
+# Constraints:
+
+# 2 <= nums.length <= 104
+# -109 <= nums[i] <= 109
+# -109 <= target <= 109
+# Only one valid answer exists.
+
+# 20. Valid Parentheses
+# Easy
+
+# 14012
+
+# 652
+
+# Add to List
+
+# Share
+# Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+# An input string is valid if:
+
+# Open brackets must be closed by the same type of brackets.
+# Open brackets must be closed in the correct order.
+
+# Example 1:
+
+# Input: s = "()"
+# Output: true
+# Example 2:
+
+# Input: s = "()[]{}"
+# Output: true
+# Example 3:
+
+# Input: s = "(]"
+# Output: false
+
+# Constraints:
+
+# 1 <= s.length <= 104
+# s consists of parentheses only '()[]{}'.
+# Accepted
+# 2,397,397
+# Submissions
+
+# 66. Plus One
+# Easy
+
+# 4575
+
+# 4269
+
+# Add to List
+
+# Share
+# You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.
+
+# Increment the large integer by one and return the resulting array of digits.
+
+# Example 1:
+
+# Input: digits = [1,2,3]
+# Output: [1,2,4]
+# Explanation: The array represents the integer 123.
+# Incrementing by one gives 123 + 1 = 124.
+# Thus, the result should be [1,2,4].
+# Example 2:
+
+# Input: digits = [4,3,2,1]
+# Output: [4,3,2,2]
+# Explanation: The array represents the integer 4321.
+# Incrementing by one gives 4321 + 1 = 4322.
+# Thus, the result should be [4,3,2,2].
+# Example 3:
+
+# Input: digits = [9]
+# Output: [1,0]
+# Explanation: The array represents the integer 9.
+# Incrementing by one gives 9 + 1 = 10.
+# Thus, the result should be [1,0].
+
+# Constraints:
+
+# 1 <= digits.length <= 100
+# 0 <= digits[i] <= 9
+# digits does not contain any leading 0's.
+
+# 121. Best Time to Buy and Sell Stock
+# Easy
+
+# 17612
+
+# 571
+
+# Add to List
+
+# Share
+# You are given an array prices where prices[i] is the price of a given stock on the ith day.
+
+# You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
+
+# Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+
+# Example 1:
+
+# Input: prices = [7,1,5,3,6,4]
+# Output: 5
+# Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+# Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
+# Example 2:
+
+# Input: prices = [7,6,4,3,1]
+# Output: 0
+# Explanation: In this case, no transactions are done and the max profit = 0.
+
+# Constraints:
+
+# 1 <= prices.length <= 105
+# 0 <= prices[i] <= 104
+# Accepted
+# 2,354,326
+# Submissions
+# 4,335,486
+
+# 202. Happy Number
+# Easy
+
+# 5901
+
+# 752
+
+# Add to List
+
+# Share
+# Write an algorithm to determine if a number n is happy.
+
+# A happy number is a number defined by the following process:
+
+# Starting with any positive integer, replace the number by the sum of the squares of its digits.
+# Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.
+# Those numbers for which this process ends in 1 are happy.
+# Return true if n is a happy number, and false if not.
+
+# Example 1:
+
+# Input: n = 19
+# Output: true
+# Explanation:
+# 12 + 92 = 82
+# 82 + 22 = 68
+# 62 + 82 = 100
+# 12 + 02 + 02 = 1
+# Example 2:
+
+# Input: n = 2
+# Output: false
+
+# Constraints:
+
+# # 1 <= n <= 231 - 1
+
+# def is_power_of_three(n)
+#   # 3 * 3
+#   # 3 * 3 * 3
+#   # 3 * 3 * 3 * 3
+#   # 3 * 3 * 3 * 3 * 3
+
+# #   #
+
+#   count = 1
+#   result = 3
+#   while result <= n
+#     count.times do
+#       result = 3 * 3
+#     end
+#   end
+# end
+
+# p is_power_of_three(12)
+
+# def taumBday(b, w, bc, wc, z)
+#   total_cost = 0
+#   if bc + z < wc
+#        traded = w * (bc + z)
+#        original = bc * b
+#        total_cost = traded + original
+#   elsif wc + z < bc
+#        traded = b * (wc + z)
+#        original = wc * w
+#        total_cost = traded + original
+#   else
+#        total_cost = (b * bc) + (w * wc)
+#   end
+#  total_cost
+# end
