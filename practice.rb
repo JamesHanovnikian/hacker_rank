@@ -744,16 +744,18 @@
 # end
 
 def squares(a, b)
-  number_of_squares = 0
-  num = a
-  while num <= b
-    square = Math.sqrt(num)
-    if square % 1 == 0
-      number_of_squares += 1
-      num += 1
-    else
-      num += 1
-    end
+  squares = 0
+  root_a = Math.sqrt(a)
+  root_b = Math.sqrt(b)
+
+  if root_a % 1 == 0 && root_b % 1 == 0
+    diff = root_b - root_a
+    squares = diff + 1
+  else
+    root_a_rounded = root_a.ceil
+    root_b_rounded = root_b.floor
+    diff = root_b_rounded - root_a_rounded
+    squares = diff + 1
   end
-  number_of_squares
+  squares
 end
