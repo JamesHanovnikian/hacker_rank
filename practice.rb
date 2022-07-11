@@ -742,3 +742,18 @@
 #   end
 #  total_cost
 # end
+
+def squares(a, b)
+  number_of_squares = 0
+  num = a
+  while num <= b
+    square = Math.sqrt(num)
+    if square % 1 == 0
+      number_of_squares += 1
+      num += 1
+    else
+      num += 1
+    end
+  end
+  number_of_squares
+end
