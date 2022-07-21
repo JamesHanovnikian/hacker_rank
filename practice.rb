@@ -743,19 +743,29 @@
 #  total_cost
 # end
 
-def squares(a, b)
-  squares = 0
-  root_a = Math.sqrt(a)
-  root_b = Math.sqrt(b)
+# def squares(a, b)
+#   squares = 0
+#   root_a = Math.sqrt(a)
+#   root_b = Math.sqrt(b)
 
-  if root_a % 1 == 0 && root_b % 1 == 0
-    diff = root_b - root_a
-    squares = diff + 1
-  else
-    root_a_rounded = root_a.ceil
-    root_b_rounded = root_b.floor
-    diff = root_b_rounded - root_a_rounded
-    squares = diff + 1
-  end
-  squares
-end
+#   if root_a % 1 == 0 && root_b % 1 == 0
+#     diff = root_b - root_a
+#     squares = diff + 1
+#   else
+#     root_a_rounded = root_a.ceil
+#     root_b_rounded = root_b.floor
+#     diff = root_b_rounded - root_a_rounded
+#     squares = diff + 1
+#   end
+#   squares
+# end
+
+# def saveThePrisoner(n, m, s)
+#   result = m + s - 1
+#   result = result % n
+#   if result == 0
+#       return n
+#   else
+#       return result
+#   end
+# end
