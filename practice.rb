@@ -769,11 +769,64 @@
 #       return result
 #   end
 
-y = [1, 1, 1, 1]
-z = [1, 1, 1, 2]
+# def funnyString(s)
+#   s_reverse = ""
+#   i = s.length-1
+#   while i >= 0
+#    s_reverse = s_reverse + s[i]
+#    i = i - 1
+#   end
 
-if y == z
-  p "yes"
-else
-  p "no"
-end
+#   s_arr = []
+#   reverse_arr = []
+#   i = 0
+#   while i < s.length
+#    s_arr << s[i].ord
+#    i += 1
+#   end
+#   j = 0
+#   while j < s_reverse.length
+#    reverse_arr << s_reverse[j].ord
+#    j += 1
+#   end
+
+#   p reverse_arr
+#   p s_arr
+
+#   rev_diff_arr = []
+#   diff_arr = []
+
+#   y = 0
+#   z = y + 1
+
+#   while z < s_arr.length
+#    if s_arr[z] > s_arr[y]
+#        diff_arr << s_arr[z] - s_arr[y]
+#    else
+#       diff_arr << s_arr[y] - s_arr[z]
+#    end
+#    z = y + 1
+#    y += 1
+
+#   end
+
+#    y = 0
+#   z = y + 1
+
+#   while z < reverse_arr.length
+#    if reverse_arr[z] > reverse_arr[y]
+#        rev_diff_arr << reverse_arr[z] - reverse_arr[y]
+#    else
+#       rev_diff_arr << reverse_arr[y] - reverse_arr[z]
+#    end
+#    z = y + 1
+#    y += 1
+#   end
+
+#   if rev_diff_arr === diff_arr
+#    p "Funny"
+#   else
+#    p "Not Funny"
+#   end
+
+# end
