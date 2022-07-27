@@ -768,4 +768,12 @@
 #   else
 #       return result
 #   end
-# end
+
+y = [1, 1, 1, 1]
+z = [1, 1, 1, 2]
+
+if y == z
+  p "yes"
+else
+  p "no"
+end
