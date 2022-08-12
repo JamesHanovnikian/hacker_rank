@@ -830,3 +830,17 @@
 #   end
 
 # end
+
+# def ice_cream_parlor(m, arr)
+#   hash = {}
+#   arr.each_with_index do |price, index|
+#     diff = m - price
+#     if hash[diff]
+#       return hash[diff] + 1, index + 1
+#     else
+#       hash[price] = index
+#     end
+#   end
+# end
+
+# p ice_cream_parlor(5, [1, 2, 4, 8])
