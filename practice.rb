@@ -844,3 +844,16 @@
 # end
 
 # p ice_cream_parlor(5, [1, 2, 4, 8])
+
+def lonelyinteger(a)
+  hash = {}
+  i = 0
+  while i < a.length
+    if hash[a[i]] == nil
+      hash[a[i]] = 0
+    end
+    hash[a[i]] += 1
+    i += 1
+  end
+  return hash.key(1)
+end
