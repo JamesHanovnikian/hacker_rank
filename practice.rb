@@ -845,15 +845,41 @@
 
 # p ice_cream_parlor(5, [1, 2, 4, 8])
 
-def lonelyinteger(a)
-  hash = {}
+# def lonelyinteger(a)
+#   hash = {}
+#   i = 0
+#   while i < a.length
+#     if hash[a[i]] == nil
+#       hash[a[i]] = 0
+#     end
+#     hash[a[i]] += 1
+#     i += 1
+#   end
+#   return hash.key(1)
+# end
+
+# def cutTheSticks(arr)
+#   # Find the shortest Length from the current array.
+#   # Delete the ones with the shortest length
+#   # arr.length to get the current number of sticks, add it to an array of the lengths at each iteration.
+#   # Output: Number of sticks at each iteration.
+# end
+
+def divisibleSumPairs(n, k, ar)
   i = 0
-  while i < a.length
-    if hash[a[i]] == nil
-      hash[a[i]] = 0
+  counter = 0
+  while i < ar.length
+    j = 0
+    while j < ar.length
+      if i < j
+        sum = ar[i] + ar[j]
+        if sum % k == 0
+          counter += 1
+        end
+      end
+      j += 1
     end
-    hash[a[i]] += 1
     i += 1
   end
-  return hash.key(1)
+  counter
 end
