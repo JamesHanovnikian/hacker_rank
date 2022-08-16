@@ -865,21 +865,45 @@
 #   # Output: Number of sticks at each iteration.
 # end
 
-def divisibleSumPairs(n, k, ar)
-  i = 0
-  counter = 0
-  while i < ar.length
-    j = 0
-    while j < ar.length
-      if i < j
-        sum = ar[i] + ar[j]
-        if sum % k == 0
-          counter += 1
-        end
+# def divisibleSumPairs(n, k, ar)
+#   i = 0
+#   counter = 0
+#   while i < ar.length
+#     j = 0
+#     while j < ar.length
+#       if i < j
+#         sum = ar[i] + ar[j]
+#         if sum % k == 0
+#           counter += 1
+#         end
+#       end
+#       j += 1
+#     end
+#     i += 1
+#   end
+#   counter
+# end
+
+
+def cutTheSticks(arr)
+  each = []
+  while arr.length > 1 
+      each << arr.length
+      j = 0 
+      shortest_stick = arr[0]
+      while j < arr.length 
+          if arr[j] < shortest_stick 
+              shortest_stick = arr[j]
+          end
+          j += 1 
       end
-      j += 1
-    end
-    i += 1
+      arr.delete(shortest_stick)
+      arr.map do |stick|
+          stick - shortest_stick
+      end
   end
-  counter
+  each.each do |x|
+      p x 
+  end
+  p 1 
 end
