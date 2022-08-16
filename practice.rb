@@ -884,26 +884,47 @@
 #   counter
 # end
 
+# def cutTheSticks(arr)
+#   each = []
+#   while arr.length > 1
+#     each << arr.length
+#     j = 0
+#     shortest_stick = arr[0]
+#     while j < arr.length
+#       if arr[j] < shortest_stick
+#         shortest_stick = arr[j]
+#       end
+#       j += 1
+#     end
+#     arr.delete(shortest_stick)
+#     arr.map do |stick|
+#       stick - shortest_stick
+#     end
+#   end
+#   each.each do |x|
+#     p x
+#   end
+#   p 1
+# end
 
-def cutTheSticks(arr)
-  each = []
-  while arr.length > 1 
-      each << arr.length
-      j = 0 
-      shortest_stick = arr[0]
-      while j < arr.length 
-          if arr[j] < shortest_stick 
-              shortest_stick = arr[j]
-          end
-          j += 1 
-      end
-      arr.delete(shortest_stick)
-      arr.map do |stick|
-          stick - shortest_stick
-      end
+def permutationEquation(p)
+  #  Create an empty array for Y
+  y = []
+  hash = {}
+  # Make each loop.with index + 1 & store it in a hash
+  p.each_with_index do |num, index|
+    hash[num] = index + 1
   end
-  each.each do |x|
-      p x 
+  x = 1
+  while x <= p.length
+    y << hash[hash[x]]
+    x += 1
   end
-  p 1 
+  p y
+  #  While loop while x is less than 5
+  #  x = 1 to start
+  #   y << hash[hash[x]]  or
+
+  # y.each do |num|
+  # p num -- > should work?
 end
