@@ -992,3 +992,15 @@
 #   end
 #   between_count
 # end
+
+# def marcsCakewalk(calorie)
+#   calorie.sort!
+#   calorie = calorie.reverse()
+#   sum = 0
+#   i = 0
+#   while i < calorie.length
+#       sum = sum + ((2 ** i) * calorie[i])
+#       i += 1
+#   end
+#   sum
+# end
