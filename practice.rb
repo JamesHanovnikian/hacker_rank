@@ -907,24 +907,88 @@
 #   p 1
 # end
 
-def permutationEquation(p)
-  #  Create an empty array for Y
-  y = []
-  hash = {}
-  # Make each loop.with index + 1 & store it in a hash
-  p.each_with_index do |num, index|
-    hash[num] = index + 1
-  end
-  x = 1
-  while x <= p.length
-    y << hash[hash[x]]
-    x += 1
-  end
-  p y
-  #  While loop while x is less than 5
-  #  x = 1 to start
-  #   y << hash[hash[x]]  or
+# def permutationEquation(p)
+#   #  Create an empty array for Y
+#   y = []
+#   hash = {}
+#   # Make each loop.with index + 1 & store it in a hash
+#   p.each_with_index do |num, index|
+#     hash[num] = index + 1
+#   end
+#   x = 1
+#   while x <= p.length
+#     y << hash[hash[x]]
+#     x += 1
+#   end
+#   p y
+#  While loop while x is less than 5
+#  x = 1 to start
+#   y << hash[hash[x]]  or
 
-  # y.each do |num|
-  # p num -- > should work?
-end
+# y.each do |num|
+# p num -- > should work?
+# end
+
+# def getTotalX(a, b)
+#   # Number of mystery numbers = output
+#   # Get factors of elements in b that are greater than the smallest elements in a.
+#   # Test if all of a is a factor of the number, if it is add one to myster number.
+#   i = 0
+#   numbers = []
+#   while i < b.length
+#     num = b[i]
+#     i += 1
+#     numbers << (1..num).select { |n| num % n == 0 }
+#   end
+#   numbers.flatten!
+#   numbers.uniq!
+# end
+
+# p getTotalX([2, 6], [24, 36])
+
+# def getTotalX(a, b)
+#   i = 0
+#   between_count = 0
+#   numbers = []
+#   while i < b.length
+#     num = b[i]
+#     numbers << (1..num).select { |n| num % n == 0 && n != 1 }
+#     i += 1
+#   end
+#   numbers.flatten!
+#   numbers.sort!
+#   hash = {}
+#   numbers.each do |x|
+#     if hash[x] == nil
+#       hash[x] = 0
+#     end
+#     hash[x] += 1
+#   end
+#   factors = []
+#   hash.each do |k, v|
+#     if v == b.length
+#       factors << k
+#     end
+#   end
+#   max = a.max()
+#   min = factors.min()
+
+#   between_count = 0
+
+#   factors.each do |factor|
+#     test = false
+#     i = 0
+#     while i < a.length
+#       a_num = a[i]
+#       if factor % a_num != 0
+#         test = true
+#       end
+#       i += 1
+#     end
+
+#     if test == false
+#       between_count += 1
+#     end
+#   end
+#   between_count
+# end
