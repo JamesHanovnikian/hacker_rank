@@ -1004,3 +1004,38 @@
 #   end
 #   sum
 # end
+
+# def luckBalance(k, contests)
+#   luck_counter = 0
+#   important_matches = 0
+#   important_array = []
+#   contest_win = {}
+#   contests.each do |luck, imp|
+#     if imp == 1
+#       important_matches += 1
+#       important_array << luck
+#     end
+#   end
+#   important_array.sort!
+
+#   if important_matches > k
+#     diff = important_matches - k
+#   end
+#   i = 0
+#   while i < diff
+#     if contest_win[important_array[i]] == nil
+#       contest_win[important_array[i]] = "unchecked"
+#     end
+#     i += 1
+#   end
+
+#   contests.each do |luck, imp|
+#     if imp == 1 && contest_win[luck] != nil && contest_win[luck] == "unchecked"
+#       luck_counter = luck_counter - luck
+#       contest_win[luck] = "checked"
+#     else
+#       luck_counter = luck_counter + luck
+#     end
+#   end
+#   luck_counter
+# end
