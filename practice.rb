@@ -1056,3 +1056,9 @@
 #   end
 #   toys
 # end
+
+# def findMedian(arr)
+#   arr.sort!
+#   median = arr.length / 2
+#   arr[median]
+# end
