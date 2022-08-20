@@ -1039,3 +1039,20 @@
 #   end
 #   luck_counter
 # end
+
+# def maximumToys(prices, k)
+#   prices.sort!
+#   toys = 0
+#   total = 0
+#   i = 0
+#   while i < prices.length
+#       price = prices[i]
+#       total = total + price
+#       if total > k
+#           break
+#       end
+#       toys += 1
+#       i += 1
+#   end
+#   toys
+# end
