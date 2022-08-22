@@ -1066,3 +1066,15 @@
 #   median = arr.length / 2
 #   arr[median]
 # end
+
+# def stringConstruction(s)
+#   # Write your code here
+#   i = 0
+#   a = []
+#   while i < s.length
+#       a << s[i]
+#       i += 1
+#   end
+#   set = a.to_set
+#   set.length
+# end
