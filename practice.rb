@@ -224,22 +224,22 @@
 
 # def serviceLane(n, cases)
 
-def serviceLane(n, cases)
-  new_array = []
- cases.each do |entry_ind, exit_ind|
-      new_array = @width.slice(entry_ind, exit_ind)
-      i = 0 
-      result = 1000
-      while i < new_array.length 
-          if new_array[i] < result 
-              result = new_array[i]
-          end
-          i += 1
-      end
-      p result 
- end
-end
-end
+# def serviceLane(n, cases)
+#   new_array = []
+#  cases.each do |entry_ind, exit_ind|
+#       new_array = @width.slice(entry_ind, exit_ind)
+#       i = 0
+#       result = 1000
+#       while i < new_array.length
+#           if new_array[i] < result
+#               result = new_array[i]
+#           end
+#           i += 1
+#       end
+#       p result
+#  end
+# end
+# end
 
 # def jumpingOnClouds(c)
 #   i = 0
