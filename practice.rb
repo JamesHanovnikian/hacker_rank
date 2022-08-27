@@ -1091,3 +1091,19 @@
 #   end
 #   energy_level
 # end
+
+# def jumpingOnClouds(c, k)
+#   energy_level = 100
+#   i = 0
+#   while true
+#       energy_level = energy_level -1
+#       if c[i] == 1
+#           energy_level = energy_level - 2
+#       end
+#       i = (i + k) % c.length
+#       if i == 0
+#           break
+#       end
+#   end
+#   energy_level
+# end
