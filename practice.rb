@@ -1078,3 +1078,16 @@
 #   set = a.to_set
 #   set.length
 # end
+
+# def jumpingOnClouds(c, k)
+#   energy_level = 100
+#   i = 0
+#   while true
+#       energy_level = energy_level - 1 - (2 * c[i])
+#       i = (i + k) % c.length
+#       if i == 0
+#           break
+#       end
+#   end
+#   energy_level
+# end
