@@ -1107,3 +1107,22 @@
 #   end
 #   energy_level
 # end
+
+# def fairRations(b)
+#   n = b.length
+#   breads = 0
+#   i = 0
+#   while i < n-1
+#       if b[i] % 2 == 1
+#           breads += 2
+#           b[i] += 1
+#           b[i+1] += 1
+#       end
+#       i += 1
+#   end
+#   if b[n-1] % 2 == 1
+#       return "NO"
+#   else
+#       return breads
+#   end
+# end
