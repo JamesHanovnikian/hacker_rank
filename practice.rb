@@ -1126,3 +1126,30 @@
 #       return breads
 #   end
 # end
+
+def gemstones(arr)
+  gemstones = 0
+  i = 0
+  n = arr.length
+  hash = {}
+  while i < arr.length
+    rock = arr[i]
+    rock = rock.split("")
+    rock = rock.uniq
+    j = 0
+    while j < rock.length
+      if hash[rock[j]] == nil
+        hash[rock[j]] = 0
+      end
+      hash[rock[j]] += 1
+      j += 1
+    end
+    i += 1
+  end
+  hash.each do |k, v|
+    if v == n
+      gemstones += 1
+    end
+  end
+  gemstones
+end
