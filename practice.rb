@@ -1157,3 +1157,20 @@
 #   end
 #   gemstones
 # end
+
+# def beautifulTriplets(d, arr)
+#   triplet_count  = 0
+#   hash = {}
+#   arr.each_with_index do |num, index|
+#       hash[num] = index
+#   end
+#   i = 0
+#   while i < arr.length
+#       num = arr[i]
+#       if hash[num + d] && hash[num + d + d]
+#           triplet_count += 1
+#       end
+#       i += 1
+#   end
+#   triplet_count
+# end
