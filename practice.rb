@@ -200,24 +200,28 @@
 # end
 
 # def cutTheSticks(arr)
-#   current_lowest_stick = arr[0]
-
-#   while arr.length >= 1
-#     i = 0
-#     p arr.length
-#     if arr.length == 1
-#       break
-#     end
-#     while i < arr.length
-#       stick_height = arr[i]
-#       if stick_height < current_lowest_stick
-#         current_lowest_stick = stick_height
+#   # While true loop, while arr.length > 1
+#   each = []
+#   while arr.length > 1
+#       each << arr.length
+#       j = 0
+#       shortest_stick = arr[0]
+#       while j < arr.length
+#           if arr[j] < shortest_stick
+#               shortest_stick = arr[j]
+#           end
+#           j += 1
 #       end
-#       i += 1
-#     end
-#     arr.map! { |num| (num - current_lowest_stick) }
-#     arr.reject! { |num| num == 0 }
+
+#       arr.delete(shortest_stick)
+
+#       if arr.length == 0
+#           return each
+#       end
+
 #   end
+#   each << 1
+#   each
 # end
 
 # p cutTheSticks([5, 4, 4, 2, 2, 8])
@@ -1127,29 +1131,29 @@
 #   end
 # end
 
-def gemstones(arr)
-  gemstones = 0
-  i = 0
-  n = arr.length
-  hash = {}
-  while i < arr.length
-    rock = arr[i]
-    rock = rock.split("")
-    rock = rock.uniq
-    j = 0
-    while j < rock.length
-      if hash[rock[j]] == nil
-        hash[rock[j]] = 0
-      end
-      hash[rock[j]] += 1
-      j += 1
-    end
-    i += 1
-  end
-  hash.each do |k, v|
-    if v == n
-      gemstones += 1
-    end
-  end
-  gemstones
-end
+# def gemstones(arr)
+#   gemstones = 0
+#   i = 0
+#   n = arr.length
+#   hash = {}
+#   while i < arr.length
+#     rock = arr[i]
+#     rock = rock.split("")
+#     rock = rock.uniq
+#     j = 0
+#     while j < rock.length
+#       if hash[rock[j]] == nil
+#         hash[rock[j]] = 0
+#       end
+#       hash[rock[j]] += 1
+#       j += 1
+#     end
+#     i += 1
+#   end
+#   hash.each do |k, v|
+#     if v == n
+#       gemstones += 1
+#     end
+#   end
+#   gemstones
+# end
