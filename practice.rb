@@ -1186,3 +1186,20 @@
 #         return "NO"
 #   end
 # end
+
+# def toys(w)
+#   w = w.sort
+#   containers = 1
+#   x = 0
+#   y = 1
+#   while y < w.length
+#       if w[y] <= w[x] + 4
+#           y += 1
+#       else
+#           x = y
+#           y = x + 1
+#           containers += 1
+#       end
+#   end
+#   containers
+# end
