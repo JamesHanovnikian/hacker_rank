@@ -1203,3 +1203,31 @@
 #   end
 #   containers
 # end
+
+def makingAnagrams(s1, s2)
+  hash_one = {}
+  i = 0
+  while i < s1.length
+    letter = s1[i]
+    if hash_one[letter] == nil
+      hash_one[letter] = 0
+    end
+    hash_one[letter] += 1
+    i += 1
+  end
+  i = 0
+  count = 0
+  while i < s2.length
+    letter = s2[i]
+    if hash_one[letter] != nil
+      hash_one[letter] = hash_one[letter] - 1
+    else
+      count += 1
+    end
+    i += 1
+  end
+  hash_one.each do |k, v|
+    count = count + v.abs()
+  end
+  count
+end
