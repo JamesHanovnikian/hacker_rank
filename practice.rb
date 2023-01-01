@@ -1204,30 +1204,63 @@
 #   containers
 # end
 
-def makingAnagrams(s1, s2)
-  hash_one = {}
-  i = 0
-  while i < s1.length
-    letter = s1[i]
-    if hash_one[letter] == nil
-      hash_one[letter] = 0
-    end
-    hash_one[letter] += 1
-    i += 1
-  end
-  i = 0
-  count = 0
-  while i < s2.length
-    letter = s2[i]
-    if hash_one[letter] != nil
-      hash_one[letter] = hash_one[letter] - 1
+# def makingAnagrams(s1, s2)
+#   hash_one = {}
+#   i = 0
+#   while i < s1.length
+#     letter = s1[i]
+#     if hash_one[letter] == nil
+#       hash_one[letter] = 0
+#     end
+#     hash_one[letter] += 1
+#     i += 1
+#   end
+#   i = 0
+#   count = 0
+#   while i < s2.length
+#     letter = s2[i]
+#     if hash_one[letter] != nil
+#       hash_one[letter] = hash_one[letter] - 1
+#     else
+#       count += 1
+#     end
+#     i += 1
+#   end
+#   hash_one.each do |k, v|
+#     count = count + v.abs()
+#   end
+#   count
+# end
+
+def squares(a, b)
+  # First take the squares of both a and b
+  # Then count up from those numbers. and find all the squares between a and b
+  i = a
+  first = 0
+  while true
+    if Math.sqrt(i) % 1 == 0
+      first = Math.sqrt(i)
+      break
     else
-      count += 1
+      i += 1
     end
-    i += 1
   end
-  hash_one.each do |k, v|
-    count = count + v.abs()
+  i = b
+  while true
+    if Math.sqrt(i) % 1 == 0
+      finish = Math.sqrt(i)
+      break
+    else
+      i = i - 1
+    end
+  end
+  first = first.to_int
+  finish = finish.to_int
+  count = 0
+  i = first
+  while i <= finish
+    count += 1
+    i += 1
   end
   count
 end
