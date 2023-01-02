@@ -1232,35 +1232,56 @@
 #   count
 # end
 
-def squares(a, b)
-  # First take the squares of both a and b
-  # Then count up from those numbers. and find all the squares between a and b
-  i = a
-  first = 0
-  while true
-    if Math.sqrt(i) % 1 == 0
-      first = Math.sqrt(i)
-      break
-    else
-      i += 1
-    end
-  end
-  i = b
-  while true
-    if Math.sqrt(i) % 1 == 0
-      finish = Math.sqrt(i)
-      break
-    else
-      i = i - 1
-    end
-  end
-  first = first.to_int
-  finish = finish.to_int
-  count = 0
-  i = first
-  while i <= finish
-    count += 1
-    i += 1
-  end
-  count
-end
+# def squares(a, b)
+#   # First take the squares of both a and b
+#   # Then count up from those numbers. and find all the squares between a and b
+#   i = a
+#   first = 0
+#   while true
+#     if Math.sqrt(i) % 1 == 0
+#       first = Math.sqrt(i)
+#       break
+#     else
+#       i += 1
+#     end
+#   end
+#   i = b
+#   while true
+#     if Math.sqrt(i) % 1 == 0
+#       finish = Math.sqrt(i)
+#       break
+#     else
+#       i = i - 1
+#     end
+#   end
+#   first = first.to_int
+#   finish = finish.to_int
+#   count = 0
+#   i = first
+#   while i <= finish
+#     count += 1
+#     i += 1
+#   end
+#   count
+# end
+
+# require "set"
+
+# def stones(n, a, b)
+#   poss_values = Set[0]
+#   i = 0
+#   while i < n - 1
+#     next_values = Set.new
+#     poss_values.each do |val|
+#       a_val = val + a
+#       next_values.add(a_val)
+#       b_val = val + b
+#       next_values.add(b_val)
+#     end
+#     poss_values = next_values
+#     i += 1
+#   end
+#   poss_values.to_a.sort
+# end
+
+# p stones(3, 2, 3)
