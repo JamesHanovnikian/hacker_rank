@@ -1285,3 +1285,14 @@
 # end
 
 # p stones(3, 2, 3)
+
+# def twoStrings(s1, s2)
+#   s1 = s1.split("")
+#   same = "NO"
+#   s1.each do |letter|
+#       if s2.include?(letter)
+#           same = "YES"
+#       end
+#   end
+#   return same
+# end
