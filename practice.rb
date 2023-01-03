@@ -1296,3 +1296,24 @@
 #   end
 #   return same
 # end
+
+# def strangeCounter(t)
+#   # Input: time
+#   # Output: value
+
+#   # Need to keep track of previous cycle starting\.
+#   time = 1
+#   value = 3
+
+#   prev_cycle_value = 3
+#   while time != t
+#       if value == 1
+#           value = (2 * prev_cycle_value)
+#           prev_cycle_value = value
+#       else
+#           value = value -1
+#       end
+#     time += 1
+#   end
+#   value
+# end
