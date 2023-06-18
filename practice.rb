@@ -1317,3 +1317,30 @@
 #   end
 #   value
 # end
+
+# def isprime?(number)
+#   n = 2
+#   while n < number
+#     return false if number % n == 0
+#     n += 1
+#   end
+#   true
+# end
+
+# def jimOrders(orders)
+#   customers = (1..orders.length).to_a
+#   time_of_delivery = {}
+#   i = 0
+#   while i < customers.length
+#       delivery_time = 0
+#       delivery_time = orders[i].sum
+#       customer = customers[i]
+#       time_of_delivery[customer] = delivery_time
+#       i += 1
+#   end
+#   output = []
+#   time_of_delivery.sort_by { |key, value| value }.each do |x|
+#       output << x[0]
+#   end
+#   output
+# end
