@@ -1345,35 +1345,57 @@
 #   output
 # end
 
-def isValid(s)
-  i = 0
-  frequencies = {}
-  while i < s.length
-    if frequencies[s[i]] == nil
-      frequencies[s[i]] = 0
-    end
-    frequencies[s[i]] += 1
-    i += 1
-  end
-  array = frequencies.values
-  current_max = array[0]
-  i = 0
-  while i < array.length
-    if array[i] > current_max
-      current_max = array[i]
-    end
-    i += 1
-  end
-  if array.uniq == 1
-    return "YES"
-  end
+# def isValid(s)
+#   i = 0
+#   frequencies = {}
+#   while i < s.length
+#     if frequencies[s[i]] == nil
+#       frequencies[s[i]] = 0
+#     end
+#     frequencies[s[i]] += 1
+#     i += 1
+#   end
+#   array = frequencies.values
+#   current_max = array[0]
+#   i = 0
+#   while i < array.length
+#     if array[i] > current_max
+#       current_max = array[i]
+#     end
+#     i += 1
+#   end
+#   if array.uniq == 1
+#     return "YES"
+#   end
 
-  small = array.min()
-  sm = array.sum
-  min_operations = sm - (array.length * small)
-  if min_operations > 1
-    return "NO"
+#   small = array.min()
+#   sm = array.sum
+#   min_operations = sm - (array.length * small)
+#   if min_operations > 1
+#     return "NO"
+#   else
+#     return "YES"
+#   end
+# end
+
+def repeatedString(s, n)
+  counter = 0
+  s.split("").each do |l|
+    if l == "a"
+      counter += 1
+    end
+  end
+  output = counter * (n / s.length)
+  if n % s.length == 0
+    return output
   else
-    return "YES"
+    rem = n % s.length
+    remaining_arr = s.slice(0, rem)
+    remaining_arr.split("").each do |l|
+      if l == "a"
+        output += 1
+      end
+    end
+    return output
   end
 end
