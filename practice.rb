@@ -1389,9 +1389,7 @@ def repeatedString(s, n)
   if n % s.length == 0
     return output
   else
-    rem = n % s.length
-    remaining_arr = s.slice(0, rem)
-    remaining_arr.split("").each do |l|
+    s.slice(0, n % s.length).split("").each do |l|
       if l == "a"
         output += 1
       end
